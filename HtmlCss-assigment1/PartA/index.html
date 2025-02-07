@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Movieswatch</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <img class="logo" src="images/logo.svg" alt="logo">
+            <nav>
+                <ul class="primary-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#movies">Movies</a></li>
+                    <li><a href="#anime">Anime</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul >
+                    <button class="login">Login</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="slide-container">
+            <div class="mySlides fade">
+                <img src="https://wallpapercat.com/w/full/1/9/5/118698-2560x1440-desktop-hd-avengers-wallpaper-photo.jpg" alt="slide1">
+                <div class="caption">Watch all hollywood blockbusters</div>
+        </div>
+        <div class="slide-container">
+            <div class="mySlides fade">
+                <img src="https://images7.alphacoders.com/131/1318705.png" alt="slide1">
+                <div class="caption">Watch all anime</div>
+        </div>
+        <div class="slide-container">
+            <div class="mySlides fade">
+                <img src="https://images4.alphacoders.com/135/1352902.jpeg" alt="slide1">
+                <div class="caption">Watch all hollywood blockbusters</div>
+        </div>
+    </section>
+    <div id="movies" class="movies-list">
+        <h2>Movies</h2>
+    </div>
+    <section >
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/b1/c4/3e/b1c43e26432f232acbfdc52726a1ae83.jpg" alt="movie1">
+                    <div class="container">
+                        <h4><b>Avengers Endgame</b></h4>
+                        <p>Marvel</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/71+k2-r7vQL._AC_UF1000,1000_QL80_.jpg" alt="movie2">
+                    <div class="container">
+                        <h4><b>John Wick</b></h4>
+                        <p>Marvel</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMjQ3OTgzMzY4NF5BMl5BanBnXkFtZTgwOTc4OTQyMzI@._V1_.jpg" alt="movie3">
+                    <div class="container">
+                        <h4><b>Kingsman</b></h4>
+                        <p>Marvel</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="https://wallpapercave.com/wp/wp5975146.jpg" alt="movie4">
+                    <div class="container">
+                        <h4><b>Thor: Ragnarok</b></h4>
+                        <p>Marvel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="anime-list">
+        <h2>Anime</h2>
+    </div>
+    <section id="anime">
+        <div class="row">
+            <div class="column">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/b5/62/83/b56283f6ab7088ea3cad0e55cad33d16.jpg" alt="movie1">
+                <div class="container">
+                    <h4><b>Jujutsu Kaisen</b></h4>
+                    <p>Marvel</p>
+                </div>
+            </div>
+            </div>
+            <div class="column">
+            <div class="card">
+                <img src="https://wallpapercg.com/download/monkey-d-luffy-mobile-1690x2366-10901.jpg" alt="movie1">
+                <div class="container">
+                    <h4><b>One piece</b></h4>
+                    <p>Marvel</p>
+                </div>
+            </div>
+            </div>
+            <div class="column">
+            <div class="card">
+                <img src="https://wallpaperaccess.com/full/1132875.jpg" alt="movie1">
+                <div class="container">
+                    <h4><b>Dragon Ball</b></h4>
+                    <p>Marvel</p>
+                </div>
+            </div>
+            </div>
+            <div class="column">
+            <div class="card">
+                <img src="https://i.pinimg.com/originals/64/78/c2/6478c272b3d0b9f739f2527b56bae731.jpg" alt="movie1">
+                <div class="container">
+                    <h4><b>Demon slayer</b></h4>
+                    <p>Marvel</p>
+                </div>
+            </div>
+            </div>
+            </div>
+    </section>
+
+<script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
