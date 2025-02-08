@@ -24,6 +24,7 @@ body {
   background-size: cover;
   color: white;
   z-index: 1000;
+  padding-bottom: -50px;
 }
 .navbar .container {
   display: flex;
@@ -37,13 +38,13 @@ body {
 .navbar .login {
   margin-left: 80em;
   color: blue;
-  border: 3px solid var(blue);
+  border: 3px solid var(rgb(5, 57, 129));
   font-weight: bold;
   border-radius: 2em;
-  margin-top: -0.2em;
+  margin-top: -1.2em;
 }
 .navbar .login:hover {
-  background: var(--primary-color);
+  background: rgb(80, 80, 252);
   color: white;
 }
 .navbar li {
@@ -65,7 +66,10 @@ body {
 
 .mySlides img {
   width: 100%;
-  height: 900px;
+  height: auto;
+  -o-object-fit: fit;
+     object-fit: fit;
+  max-height: 90vh;
 }
 
 .mySlides .caption {
@@ -157,6 +161,22 @@ h2 {
 
 .container {
   padding: 15px;
+  text-align: center;
+}
+.container .checked {
+  color: red;
+}
+.container .watch {
+  background: rgb(1, 1, 9);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container .watch:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  background: white;
+  color: black;
 }
 
 @media screen and (max-width: 1024px) {
@@ -164,10 +184,27 @@ h2 {
     flex: 1 1 calc(50% - 20px);
     max-width: calc(50% - 20px);
   }
+  .mySlides img {
+    height: 500px;
+    -o-object-fit: fit;
+       object-fit: fit;
+  }
 }
 @media screen and (max-width: 600px) {
   .column {
     flex: 1 1 100%;
     max-width: 100%;
   }
+  .mySlides img {
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+footer p {
+  text-align: center;
+  background: #012b55;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
 }/*# sourceMappingURL=main.css.map */
